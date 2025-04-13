@@ -12,7 +12,7 @@ const connectDB = async () => {
 
   try {
     // Use MONGO_URI environment variable if available, otherwise fall back to the hardcoded value
-    const mongoURI = process.env.MONGO_URI || "mongodb+srv://purveshjambhulkar16:wzynTleSmEoZPr54@cluster0.7daen0o.mongodb.net/";
+    const mongoURI = "mongodb+srv://purveshjambhulkar16:wzynTleSmEoZPr54@cluster0.7daen0o.mongodb.net/";
     
     if (!mongoURI) {
       console.error('MongoDB URI is not defined');

@@ -1,7 +1,7 @@
 import { Problem, UserStats } from '@/types';
 import { toast } from 'sonner';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://algo-quest-backend.vercel.app/api';
+const API_URL = 'https://algo-quest-backend.vercel.app/api';
 
 // Initialize the database if empty
 export const initializeDB = async () => {

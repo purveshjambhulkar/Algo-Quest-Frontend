@@ -14,6 +14,7 @@ import MarkdownRenderer from "@/components/MarkdownRenderer";
 import DifficultyBadge from "@/components/DifficultyBadge";
 import { Problem } from "@/types";
 import { ChevronLeft, ChevronRight, CheckCircle, XCircle, Clock } from "lucide-react";
+import { ArrowLeft, Trash2, Loader2, ExternalLink } from 'lucide-react';
 import { toast } from "sonner";
 
 const PracticeSession = () => {

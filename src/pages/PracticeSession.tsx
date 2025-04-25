@@ -92,6 +92,12 @@ const PracticeSession = () => {
       handleNext();
     }
   };
+
+  const handleOpenProblemLink = () => {
+    if (currentProblem.link) {
+      window.open(currentProblem.link, '_blank', 'noopener,noreferrer');
+    }
+  };
   
   if (loading) {
     return (
@@ -156,6 +162,16 @@ const PracticeSession = () => {
           <div className="text-sm text-muted-foreground">
             Category: {currentProblem.category}
           </div>
+          {currentProblem.link && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={handleOpenProblemLink}
+              className="ml-2"
+            >
+              <ExternalLink className="h-4 w-4 mr-2" /> Open Problem
+            </Button>
+          )}
         </CardHeader>
         
         <CardContent className="prose prose-sm dark:prose-invert max-w-none">
